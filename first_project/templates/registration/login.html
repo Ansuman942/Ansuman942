@@ -7,9 +7,9 @@
 </head>
 <body>
     <form method="POST" action={% url "login"%}>
-         {% csrf_token %}
-         <p>Errors:</p>
-         {{form.errors}}
+        {% csrf_token %}
+        <p>Errors:</p>
+        {{form.errors}}
         {{form.username.label_tag}}
         {{form.username}}
 
